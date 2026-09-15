@@ -1,0 +1,19 @@
+Puntos de agua contra incendios.:
+	 Atributo: FEATURE - Descripción: Identificador de feature (objeto geográfico) en el modelo de datos SITNA
+	 Atributo: IDPUNTO - Descripción: Identificador de punto
+	 Atributo: CMUNICIPIO - Descripción: Código INE de municipio
+	 Atributo: MUNICIPIO - Descripción: Nombre oficial de municipio
+	 Atributo: CONCEJO - Descripción: Nombre oficial de concejo
+	 Atributo: X25830 - Descripción: Coordenada X en EPSG 25830 (UTM 30N ETRS 89)
+	 Atributo: Y25830 - Descripción: Coordenada Y en EPSG 25830 (UTM 30N ETRS 89)
+	 Atributo: CTIPO - Descripción: Código del tipo en que se clasifican los elementos de la capa
+	 Atributo: TIPO - Descripción: Descripción del tipo en que se clasifican los elementos de la capa
+	 Atributo: IDCAPACIDA - Descripción: Identificador de la capacidad de un elemento
+	 Atributo: CUSO - Descripción: Código del uso a que se destinan los registros de una capa
+	 Atributo: USO - Descripción: Uso a que se destinan los registros de una capa
+	 Atributo: CTITULAR - Descripción: Código del nombre o tipo de persona u organismo que figura como titular de algún bien (parcelas, equipamiento, etc.)
+	 Atributo: TITULAR - Descripción: Nombre o tipo de persona u organismo que figura como titular de algún bien (parcelas, equipamiento, etc.)
+	 Atributo: DEMARCACIO - Descripción: Denominación de demarcación de guarderío
+	 Atributo: IMAGEN - Descripción: Enlace a una imagen relacionada con el objeto gráfico
+	 Atributo: OBSERVACIO - Descripción: Observaciones de cualquier tipo referentes a los elementos de una capa
+	 Atributo: BEGINLIFE - Descripción: Fecha de inserción del dato en la base de datos SITNA

@@ -1,0 +1,12 @@
+BRUTOS/
+FINALES/
+DOCUMENTACION/
+redaccion_antiguo_files/
+.ipynb_checkpoints/
+QGIS/
+*pdf
+*aux
+*log
+*toc
+*tex
+*out

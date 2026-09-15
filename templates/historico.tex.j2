@@ -1,0 +1,18 @@
+((* for dato in output.metadata.datos *))
+\begin{table}[]
+\begin{tabular}{p{4cm}p{4cm}p{4cm}p{4cm}}
+\multicolumn{4}{c}{{\huge ((( dato.municipio ))) ((( dato.year )))}} \\ \hline
+\multicolumn{3}{l}{Fecha: ((( dato.fecha )))}                & \cellcolor[HTML]{EFEFEF}                                      \\ \cline{1-3}
+\multicolumn{3}{l}{Superficie: ((( dato.supquemada ))) ha}          & \cellcolor[HTML]{EFEFEF}                                      \\ \cline{1-3}
+\multicolumn{3}{l}{Situación sinóptica: ((( dato.situacion_sinoptica )))} ((( row ))) & \cellcolor[HTML]{EFEFEF}                                      \\ \cline{1-3}
+\multicolumn{3}{l}{Estación meteo: ((( dato.nombre )))}      & \multirow{-4}{*}{\cellcolor[HTML]{EFEFEF}\includegraphics[width=5.5cm,height=4cm,keepaspectratio]{FINALES/HISTORICO/MAPA_INCENDIOS/localizacion_incendio_((( dato.numparte ))).0.png}} \\[2cm] \hline
+\rowcolor[HTML]{EFEFEF} 
+
+\multicolumn{2}{l}{\includegraphics[width=7.5cm,height=6cm,keepaspectratio]{FINALES/HISTORICO/MAPA_INCENDIOS/mapa_incendio_((( dato.numparte ))).0.png}}     & \multicolumn{2}{l}{\includegraphics[width=9.5cm,height=9cm,keepaspectratio]{FINALES/HISTORICO/METEOGRAMAS/meteograma_((( dato.id )))_((( dato.fmet ))).png}} \\
+
+\multicolumn{2}{l}{\includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/HISTORICO/WETTERZENTRALE/isohipsas_500_((( dato.fwett ))).png}}     & \multicolumn{2}{l}{\includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/HISTORICO/WETTERZENTRALE/isohipsas_850_((( dato.fwett ))).png}}                                             \\ \hline
+
+\end{tabular}
+\end{table}
+\newpage
+((* endfor *))

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="puntos_agua" id="puntos_agua">
+	<SimpleField name="fid" type="float"></SimpleField>
+	<SimpleField name="FEATURE" type="int"></SimpleField>
+	<SimpleField name="IDPUNTO" type="string"></SimpleField>
+	<SimpleField name="CMUNICIPIO" type="int"></SimpleField>
+	<SimpleField name="MUNICIPIO" type="string"></SimpleField>
+	<SimpleField name="CONCEJO" type="string"></SimpleField>
+	<SimpleField name="X25830" type="float"></SimpleField>
+	<SimpleField name="Y25830" type="float"></SimpleField>
+	<SimpleField name="CTIPO" type="int"></SimpleField>
+	<SimpleField name="TIPO" type="string"></SimpleField>
+	<SimpleField name="IDCAPACIDA" type="string"></SimpleField>
+	<SimpleField name="CUSO" type="int"></SimpleField>
+	<SimpleField name="USO" type="string"></SimpleField>
+	<SimpleField name="CTITULAR" type="int"></SimpleField>
+	<SimpleField name="TITULAR" type="string"></SimpleField>
+	<SimpleField name="DEMARCACIO" type="string"></SimpleField>
+	<SimpleField name="IMAGEN" type="string"></SimpleField>
+	<SimpleField name="OBSERVACIO" type="string"></SimpleField>
+	<SimpleField name="BEGINLIFE" type="string"></SimpleField>
+</Schema>
+<Folder><name>puntos_agua</name>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">1</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D08_024</SimpleData>
+		<SimpleData name="CMUNICIPIO">242</SimpleData>
+		<SimpleData name="MUNICIPIO">Urraúl Bajo</SimpleData>
+		<SimpleData name="X25830">634534</SimpleData>
+		<SimpleData name="Y25830">4721374</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">&lt; 250 m3</SimpleData>
+		<SimpleData name="CUSO">2</SimpleData>
+		<SimpleData name="USO">Ganadero</SimpleData>
+		<SimpleData name="CTITULAR">1</SimpleData>
+		<SimpleData name="TITULAR">Municipal</SimpleData>
+		<SimpleData name="DEMARCACIO">Aoiz-Agoitz</SimpleData>
+		<SimpleData name="IMAGEN">image_200_auto__https://administracionelectronica.navarra.es/AccesoFicheros/DownloadFile.aspx?CodigoCompleto=mpu@@@Foto_PA/PA_D08_024.jpg</SimpleData>
+		<SimpleData name="OBSERVACIO">Buen acceso desde carretera puerto Aibar. Cortar pinos de alrededor.</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.35919397666431,42.6330694255891</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">2</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_008</SimpleData>
+		<SimpleData name="CMUNICIPIO">69</SimpleData>
+		<SimpleData name="MUNICIPIO">Cáseda</SimpleData>
+		<SimpleData name="X25830">637028</SimpleData>
+		<SimpleData name="Y25830">4709854</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">3</SimpleData>
+		<SimpleData name="USO">Regadío</SimpleData>
+		<SimpleData name="CTITULAR">3</SimpleData>
+		<SimpleData name="TITULAR">Particular</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">image_200_auto__https://administracionelectronica.navarra.es/AccesoFicheros/DownloadFile.aspx?CodigoCompleto=mpu@@@Foto_PA/PA_D10_008.jpg</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.33155704154051,42.5289276874539</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">3</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_009</SimpleData>
+		<SimpleData name="CMUNICIPIO">216</SimpleData>
+		<SimpleData name="MUNICIPIO">Sangüesa / Zangoza</SimpleData>
+		<SimpleData name="X25830">640043</SimpleData>
+		<SimpleData name="Y25830">4713835</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">&gt; 5.000 m3</SimpleData>
+		<SimpleData name="CUSO">5</SimpleData>
+		<SimpleData name="USO">Consumo humano</SimpleData>
+		<SimpleData name="CTITULAR">2</SimpleData>
+		<SimpleData name="TITULAR">Mancomunidad</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">image_200_auto__https://administracionelectronica.navarra.es/AccesoFicheros/DownloadFile.aspx?CodigoCompleto=mpu@@@Foto_PA/PA_D10_009.jpg</SimpleData>
+		<SimpleData name="OBSERVACIO">Balsas de la depuradora</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.29388641095344,42.5642236219726</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">4</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_010</SimpleData>
+		<SimpleData name="CMUNICIPIO">9</SimpleData>
+		<SimpleData name="MUNICIPIO">Aibar / Oibar</SimpleData>
+		<SimpleData name="X25830">634619</SimpleData>
+		<SimpleData name="Y25830">4717606</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">1</SimpleData>
+		<SimpleData name="USO">Balsa contra incendios</SimpleData>
+		<SimpleData name="CTITULAR">4</SimpleData>
+		<SimpleData name="TITULAR">Otros (indicar en observaciones)</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">image_200_auto__https://administracionelectronica.navarra.es/AccesoFicheros/DownloadFile.aspx?CodigoCompleto=mpu@@@Foto_PA/PA_D10_010.jpg</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.35904875150574,42.5991350615881</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">5</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_013</SimpleData>
+		<SimpleData name="CMUNICIPIO">216</SimpleData>
+		<SimpleData name="MUNICIPIO">Sangüesa / Zangoza</SimpleData>
+		<SimpleData name="CONCEJO">Rocaforte</SimpleData>
+		<SimpleData name="X25830">640515</SimpleData>
+		<SimpleData name="Y25830">4717185</SimpleData>
+		<SimpleData name="CTIPO">2</SimpleData>
+		<SimpleData name="TIPO">Aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">6</SimpleData>
+		<SimpleData name="USO">Otros</SimpleData>
+		<SimpleData name="CTITULAR">3</SimpleData>
+		<SimpleData name="TITULAR">Particular</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">Imagen no disponible</SimpleData>
+		<SimpleData name="OBSERVACIO">Uso industrial.</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.28731330501987,42.5942936538413</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">6</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_014</SimpleData>
+		<SimpleData name="CMUNICIPIO">216</SimpleData>
+		<SimpleData name="MUNICIPIO">Sangüesa / Zangoza</SimpleData>
+		<SimpleData name="X25830">644751</SimpleData>
+		<SimpleData name="Y25830">4713443</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">3</SimpleData>
+		<SimpleData name="USO">Regadío</SimpleData>
+		<SimpleData name="CTITULAR">3</SimpleData>
+		<SimpleData name="TITULAR">Particular</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">Imagen no disponible</SimpleData>
+		<SimpleData name="OBSERVACIO">(No hay foto)</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.23665526425347,42.5598268224434</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">7</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_016</SimpleData>
+		<SimpleData name="CMUNICIPIO">216</SimpleData>
+		<SimpleData name="MUNICIPIO">Sangüesa / Zangoza</SimpleData>
+		<SimpleData name="CONCEJO">Gabarderal</SimpleData>
+		<SimpleData name="X25830">640293</SimpleData>
+		<SimpleData name="Y25830">4710243</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">3</SimpleData>
+		<SimpleData name="USO">Regadío</SimpleData>
+		<SimpleData name="CTITULAR">3</SimpleData>
+		<SimpleData name="TITULAR">Particular</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">Imagen no disponible</SimpleData>
+		<SimpleData name="OBSERVACIO">(No hay foto)</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.2917241767372,42.5318438047222</coordinates></Point>
+  </Placemark>
+  <Placemark>
+	<ExtendedData><SchemaData schemaUrl="#puntos_agua">
+		<SimpleData name="fid">8</SimpleData>
+		<SimpleData name="FEATURE">7400023</SimpleData>
+		<SimpleData name="IDPUNTO">PA_D10_017</SimpleData>
+		<SimpleData name="CMUNICIPIO">216</SimpleData>
+		<SimpleData name="MUNICIPIO">Sangüesa / Zangoza</SimpleData>
+		<SimpleData name="CONCEJO">Gabarderal</SimpleData>
+		<SimpleData name="X25830">639616</SimpleData>
+		<SimpleData name="Y25830">4710430</SimpleData>
+		<SimpleData name="CTIPO">3</SimpleData>
+		<SimpleData name="TIPO">Tierra y aéreo</SimpleData>
+		<SimpleData name="IDCAPACIDA">750-5.000 m3</SimpleData>
+		<SimpleData name="CUSO">3</SimpleData>
+		<SimpleData name="USO">Regadío</SimpleData>
+		<SimpleData name="CTITULAR">3</SimpleData>
+		<SimpleData name="TITULAR">Particular</SimpleData>
+		<SimpleData name="DEMARCACIO">Tafalla-Sangüesa</SimpleData>
+		<SimpleData name="IMAGEN">Imagen no disponible</SimpleData>
+		<SimpleData name="OBSERVACIO">(No hay foto)</SimpleData>
+		<SimpleData name="BEGINLIFE">07/03/2025</SimpleData>
+	</SchemaData></ExtendedData>
+      <Point><coordinates>-1.29991845256769,42.5336497213393</coordinates></Point>
+  </Placemark>
+</Folder>
+</Document></kml>

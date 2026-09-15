@@ -1,0 +1,11 @@
+  ((* for i in range(3) *))  
+    \begin{tabular}{ m{8cm}m{8cm} }
+    \toprule
+    ((* for n in range(3) *))
+    ((* set j = 2005 + i * 3 + n * 2 *))
+      ((( j ))) & ((( j + 1 ))) \\ 
+      \includegraphics[width=8.8cm,height=6.7cm,keepaspectratio]{FINALES/CLIMOGRAMAS/climodiagrama_((( j ))).png}  & \includegraphics[width=8.8cm,height=6.7cm,keepaspectratio]{FINALES/CLIMOGRAMAS/climodiagrama_((( j + 1 )))} \\ \hline
+    ((* endfor *))
+    \end{tabular}
+    \newpage
+  ((* endfor *))

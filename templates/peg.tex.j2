@@ -1,0 +1,16 @@
+((* for dato in output.metadata.datos *))
+\begin{table}[]
+\begin{tabular}{cl}
+\multirow{2}{*}{\includegraphics[width=6.9cm,height=5.5cm,keepaspectratio]{FINALES/PEG/peg_ubicacion_((( dato.id ))).png}} & \includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/PEG/peg_((( dato.id ))).png}     \\
+                                  & \includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/PEG/peg_topo_((( dato.id ))).png} 
+\end{tabular}
+\end{table}
+
+\textbf{Superficie:} ((( "%.2f" | format(dato.superficie / 10000) ))) ha
+
+\textbf{Justificación:} ((( dato.justificac )))
+
+\textbf{Propuestas de actuación:} ((( dato.actuacione )))
+
+\newpage
+((* endfor *))

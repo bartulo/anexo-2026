@@ -1,0 +1,15 @@
+\pagebreak
+((* set datos = cell.outputs[0].metadata.datos *))
+((* for dato in datos *))
+((( dato['concejo'] )))
+\begin{table}[H]
+\begin{tabular}{lllll}
+\hline
+                                                                                            & \cellcolor[HTML]{EFEFEF}ACTUACIONES                                                            & \cellcolor[HTML]{EFEFEF}UNIDADES & \cellcolor[HTML]{EFEFEF}PRECIO UNIT. & \cellcolor[HTML]{EFEFEF}PRECIO TOTAL \\ \hline
+\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}l@{}}TRABAJOS DE \\ SELVICULTURA\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ha. de desbroce \\ preventivo\\ Dificultad media\end{tabular}       & ((( "%0.2f" | format(dato['sup_for']) ))) & 440.66 \euro                             &  ((( "%0.2f" | format(dato['sup_for'] * 440.66) ))) \euro                                    \\ \hline
+\cellcolor[HTML]{EFEFEF}\begin{tabular}[c]{@{}l@{}}COMPENSACIÓN\\ AGRICULTORES\end{tabular} & \begin{tabular}[c]{@{}l@{}}Ha. de compensación\\ por limitación de uso\\ agrícola\end{tabular} & ((( "%0.2f" | format(dato['sup_ag']) ))) & 980.00 \euro                              & ((( "%0.2f" | format(dato['sup_ag'] * 980.00) ))) \euro                                     \\ \hline 
+\rowcolor[HTML]{EFEFEF} 
+                                                                                            & TOTAL EJECUCIÓN                                                                                &                                  &                                      &   ((( "%0.2f" | format(dato['sup_for'] * 440.66 + dato['sup_ag'] * 980.00) ))) \euro \\ \hline                              
+\end{tabular}
+\end{table}
+((* endfor *))

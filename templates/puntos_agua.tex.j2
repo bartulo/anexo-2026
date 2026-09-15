@@ -1,0 +1,19 @@
+((* set datos = cell.outputs[0].metadata.datos *))
+  ((* for dato in datos *))
+    \begin{tabular}{ m{4.5cm}m{4.5cm}m{5.5cm} }
+    \toprule
+    \multicolumn{3}{ c }{((( dato['index'] )))} \\
+    \hline
+    Capacidad & ((( dato['Capacidad'] ))) $m^3$ & \multirow{3}{*}{\includegraphics[width=5.5cm,height=8cm,keepaspectratio]{FINALES/PUNTOS_AGUA/localizacion_((( dato['index'] ))).png}} \\[0.75cm] \cline{0-1}
+      Coordenada UTM X & ((( "%0.2f" | format(dato['X UTM']) ))) & \\[0.75cm] \cline{0-1}
+      Coordenada UTM Y &  ((( "%0.2f" | format(dato['Y UTM']) ))) & \\[0.75cm] \cline{0-1}
+      Longitud & ((( dato['Longitud'] ))) & \\[0.75cm] \cline{0-1}
+      Latitud & ((( dato['Latitud'] ))) & \\[0.75cm] \cline{0-1}
+      Utilidad & ((( dato['Utilidad'] ))) & \\[0.75cm] \cline{0-1}
+      Propietario & ((( dato['Propietari'] ))) & \\[0.75cm] \cline{0-1}
+      Observaciones & ((( dato['Observacio'] ))) & \\[0.75cm] \hline
+    \multicolumn{3}{c}{\includegraphics[width=14cm,height=12cm,keepaspectratio]{FINALES/PUNTOS_AGUA/puntos_agua_((( dato['index'] ))).png}} \\
+    \toprule
+    \end{tabular}
+    \newpage
+  ((* endfor *))

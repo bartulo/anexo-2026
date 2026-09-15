@@ -1,0 +1,101 @@
+((* set datos = cell.outputs[0].metadata.datos *))
+  ((* for dato in datos *))
+    ((* if dato['iuf'] | length > 0 *))
+      ((* set iuf = dato['iuf'] | length *))
+    ((* else *))
+      ((* set iuf = 1 *))
+    ((* endif *))
+    ((* if dato['iua'] | length > 0 *))
+      ((* set iua = dato['iua'] | length *))
+    ((* else *))
+      ((* set iua = 1 *))
+    ((* endif *))
+    ((* set altura = (6 / ( 5 + iua + iuf )) - 0.2 *))
+    \begin{tabular}{ m{4.5cm}m{4.5cm}m{5.5cm} lcl }
+    \toprule
+    \multicolumn{3}{ c }{((( dato['tipo'][:5] | join(', ') )))} \\
+    \hline
+    Superficie & ((( "%0.2f" | format(dato['superficie']) ))) ha & \multirow{3}{*}{\includegraphics[width=5.5cm,height=8cm,keepaspectratio]{FINALES/IUF/ubicacion_((( dato['municipio'] )))_((( dato['id'] ))).png}} \\[((( altura )))cm] \cline{0-1}
+      ((* if dato['iuf'] | length > 1 *))
+        \multirow{((( dato['iuf'][:5] | length )))}{*}{Interfaz urbano forestal} ((* for i in dato['iuf'][:5] *)) & ((( i ))) &  \\[((( altura )))cm] ((* endfor *)) \cline{0-1}
+      ((* elif dato['iuf'] | length == 1 *))
+        Interfaz urbano forestal & ((( dato['iuf'][0] ))) & \\[((( altura )))cm] \cline{0-1}
+      ((* else *))
+        Interfaz urbano forestal & - & \\[((( altura )))cm] \cline{0-1}
+      ((* endif *))
+      Superficie IUF (<30m) & ((( "%0.2f" | format(dato['sup_for']) ))) ha & \\[((( altura )))cm] \cline{0-1}
+      ((* if dato['iua'] | length > 1 *))
+        \multirow{((( dato['iua'] | length )))}{*}{Interfaz urbano agrícola} ((* for i in dato['iua'] *)) & ((( i ))) &  \\[((( altura )))cm] ((* endfor *)) \cline{0-1}
+      ((* elif dato['iua'] | length == 1 *))
+        Interfaz urbano agrícola & ((( dato['iua'][0] ))) & \\[((( altura )))cm] \cline{0-1}
+      ((* else *))
+        Interfaz urbano agrícola & - & \\[((( altura )))cm] \cline{0-1}
+      ((* endif *))
+      Superficie IUA (<8m) & ((( "%0.2f" | format(dato['sup_ag']) ))) ha & \\[((( altura )))cm] \cline{0-1}
+      Carreteras & ((( dato['carreteras'] | join(', ') ))) & \\[((( altura )))cm] \cline{0-1}
+      Número de caminos & ((( dato['caminos'] ))) & \\[((( altura )))cm] \hline
+    \multicolumn{3}{c}{\includegraphics[width=14cm,height=12cm,keepaspectratio]{FINALES/IUF/iuf_((( dato['municipio'] )))_((( dato['id'] ))).png}} \\
+    \toprule
+    \end{tabular}
+    \newpage
+
+    \begin{center}
+    \rowcolors{2}{white}{lightgray!25}
+    \begin{tabular}{ m{7.5cm}m{7.5cm} ll }
+    \toprule
+      Tipología & ((( dato['tipologia'] ))) \\ \hline
+      Peligrosidad & ((( dato['peligrosidad'] ))) \\ \hline
+      Vulnerabilidad & ((( dato['vulnerabilidad'] ))) \\ \hline
+      Observaciones & ((( dato['observaciones'] ))) \\ \hline
+      Necesidad de PAIF & ((( dato['paif'] ))) \\ \hline
+      Franja Perimetral & No \\ \hline
+      Vías de acceso & ((( dato['carreteras'] | join(', ') ))) \\ \hline
+      Número de hidrantes & ((( dato['hidrantes'] ))) \\ \hline
+      
+    \multicolumn{2}{c}{\includegraphics[width=14cm,height=12cm,keepaspectratio]{FINALES/IUF/iuf_topo_((( dato['municipio'] )))_((( dato['id'] ))).png}} \\
+    \toprule
+    \end{tabular}
+    \end{center}
+
+    \newpage
+    ((* if dato['presupuesto'] *))
+    Presupuesto actuaciones de prevención contra incendio forestal ((( dato['actividad'] ))). Todos los precios incluyen IVA. \\
+    \\
+    \begin{adjustbox}{width=1\textwidth}
+    ((( dato['presupuesto'] )))
+    \end{adjustbox}
+    \begin{figure}
+      \centering
+      \includegraphics[width=12cm]{PERALTA/ACTUACIONES/actuaciones_((( dato['id'] ))).png}\hfill
+      \caption{Croquis de los trabajos a realizar}
+    \end{figure}
+    ((* else *))
+    No hay que realizar ninguna actuación en esta zona \\
+    \\
+    ((* endif *))
+
+    ((* if dato['foto_vuln'] *))
+
+      \begin{figure}
+          \centering
+          ((* set l = dato['foto_vuln'] | length *))
+          ((* if l == 1 *))
+            ((* set w = 13 *))
+          ((* else *))
+            ((* set w = 8 *))
+          ((* endif *))  
+          ((* for index in range(l) *))
+          ((* if dato['orien_vuln'][index] == 'h' *))
+            ((* set orientacion = '' *))
+          ((* else *))
+            ((* set orientacion = ', angle=-90, origin=c' *))
+          ((* endif *))
+            \includegraphics[width=((( w )))cm((( orientacion )))]{../BRUTOS/FOTOS/PERALTA/Fotos/((( dato['foto_vuln'][index] )))}\hfill
+          ((* endfor *))
+          \caption{((( dato['pie_vuln'] )))}
+      \end{figure}
+
+    ((* endif *))
+    \newpage
+ 
+  ((* endfor *))
