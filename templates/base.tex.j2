@@ -11,10 +11,14 @@ override this.-=))
 %===============================================================================
 
 ((*- block header -*))
-    ((* block docclass *))\documentclass[11pt]{article}((* endblock docclass *))
+    ((* block docclass *))\documentclass[draft]{article}((* endblock docclass *))
 
     \usepackage[table]{xcolor} % Allow colors to be defined
+    \usepackage{pgffor}
     \usepackage[spanish]{babel}
+    \usepackage{etoolbox}
+    \patchcmd{\longtable}{Continued on next page}{Continúa en la siguiente página}{}{}
+
     ((* block packages *))
 
     % Basic figure setup, for now with no caption control since it's done

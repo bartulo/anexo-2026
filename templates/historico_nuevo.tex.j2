@@ -1,0 +1,59 @@
+((* for row in output.metadata.incendios *))
+\begin{center}
+{\huge \textbf{Información Incendio ((( row.MUNICIPIO )))} \par}
+\end{center}
+\vspace{0.6cm} % Espacio elegante debajo del título
+
+% ----------------------------------------------------
+% FILA 1: Imagen de Perímetro y Tabla de Datos
+% ----------------------------------------------------
+\begin{figure}[h!]
+    \centering
+    % Primera imagen (ocupa el 45% del ancho del texto)
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=\textwidth,height=0.45\textheight,keepaspectratio]{BRUTOS/HISTORICO/MAPAS/mapa_((( row.NUMPARTE ))).png}
+        \captionof*{figure}{Perímetro final del incendio}
+    \end{minipage}
+    \hfill
+    % Bloque derecho para la Tabla (centrada verticalmente con [c])
+    \begin{minipage}[c]{0.45\textwidth}
+        \centering
+        \captionof*{table}{Datos}
+        \vspace{0.5em}
+        
+        \renewcommand{\arraystretch}{1.4}
+        % Estructura de la tabla (2 columnas con el formato exacto de tu script)
+        \begin{tabular}{p{3.2cm}>{\raggedleft\arraybackslash}p{3.2cm}}
+            \toprule
+            \rowcolor{gray!25} Fecha & ((( row.FECHA ))) \\ \hline
+            Fecha Extinción & ((( row.FECHAEXTIN ))) \\ \hline
+            \rowcolor{gray!25} Municipio & ((( row.MUNICIPIO ))) \\ \hline
+            Superficie quemada & ((( row.SUPQUEMADA ))) ha \\
+            \bottomrule
+        \end{tabular}
+    \end{minipage}
+\end{figure}
+
+\vspace{2em}
+
+% ----------------------------------------------------
+% FILA 2: Dos imágenes meteorológicas en paralelo (500 hpa y 850 hpa)
+% ----------------------------------------------------
+\begin{figure}[h!]
+    \centering
+    % Bloque izquierdo para el Mapa 500 hpa
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{BRUTOS/HISTORICO/WETTERZENTRALE/isohipsas_500_((( row.FECHA_WETT ))).png}
+        \captionof*{figure}{Mapa de 500 hpa del día del incendio}
+    \end{minipage}
+    \hfill
+    % Bloque derecho para el Mapa 850 hpa
+    \begin{minipage}{0.45\textwidth}
+        \includegraphics[width=\textwidth]{BRUTOS/HISTORICO/WETTERZENTRALE/isohipsas_850_((( row.FECHA_WETT ))).png}
+        \captionof*{figure}{Mapa de 850 hpa del día del incendio}
+    \end{minipage}
+\end{figure}
+
+\newpage
+((* endfor *))
+

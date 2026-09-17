@@ -1,9 +1,11 @@
 \begin{landscape}
 
-\newcounter{x}
-\forloop{x}{0}{\value{x} < 25} {
-\pagebreak
-\adjustimage{max size={1.4\linewidth}{1.4\paperheight}}{../DOCUMENTACION/RESTRICCIONES/restricciones_\arabic{x}.jpg}
-\newpage
+% El bucle itera automáticamente desde 0 hasta 24
+\foreach \x in {0,...,24} {
+    \pagebreak
+    \adjustimage{max size={1.4\linewidth}{1.4\paperheight}}{./DOCUMENTACION/RESTRICCIONES/restricciones_\x.jpg}
+    \newpage
 }
+
 \end{landscape}
+

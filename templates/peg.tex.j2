@@ -1,16 +1,40 @@
 ((* for dato in output.metadata.datos *))
-\begin{table}[]
-\begin{tabular}{cl}
-\multirow{2}{*}{\includegraphics[width=6.9cm,height=5.5cm,keepaspectratio]{FINALES/PEG/peg_ubicacion_((( dato.id ))).png}} & \includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/PEG/peg_((( dato.id ))).png}     \\
-                                  & \includegraphics[width=7.9cm,height=6.5cm,keepaspectratio]{FINALES/PEG/peg_topo_((( dato.id ))).png} 
-\end{tabular}
-\end{table}
+\nopagebreak
+\begin{minipage}{\textwidth}
+    \centering
+    
+    % --- TÍTULO DE LA PÁGINA (Sin alterar el TOC) ---
+    {\Large \textbf{PEG ((( dato.id )))} \par}
+    \vspace{0.8cm} % Espacio entre el título y las imágenes
+    
+    \small
 
-\textbf{Superficie:} ((( "%.2f" | format(dato.superficie / 10000) ))) ha
+    % --- TABLA DE DATOS (Segunda columna alineada a la derecha) ---
+    \noindent
+    \renewcommand{\arraystretch}{1.4} % <-- Incrementa el padding vertical en las celdas
+    \begin{tabular}{p{0.25\textwidth}>{\raggedleft\arraybackslash}p{0.70\textwidth}}
+        \hline
+        \rowcolor[gray]{0.95} \textbf{Superficie} & ((( "%.2f" | format(dato.superficie / 10000) ))) ha \\ \hline
+        \textbf{Tipo} & ((( dato.tipo ))) \\ \hline
+        \rowcolor[gray]{0.95} \textbf{Justificación y propuestas de actuación} & ((( dato.observaciones ))) \\ \hline
+    \end{tabular}
 
-\textbf{Justificación:} ((( dato.justificac )))
+    \vspace{0.6cm}
 
-\textbf{Propuestas de actuación:} ((( dato.actuacione )))
+    % --- REJILLA DE IMÁGENES REBALANCEADA ---
+    \begin{tabular}{m{0.32\textwidth} m{0.62\textwidth}}
+        \centering
+        \includegraphics[width=0.30\textwidth,height=10cm,keepaspectratio]{FINALES/PEG/peg_ubicacion_((( dato.id ))).0.png} 
+        & 
+        \begin{minipage}{0.62\textwidth}
+            \centering
+            \includegraphics[width=\textwidth,height=6.8cm,keepaspectratio]{FINALES/PEG/peg_((( dato.id ))).0.png} \\[0.2cm]
+            \includegraphics[width=\textwidth,height=6.8cm,keepaspectratio]{FINALES/PEG/peg_topo_((( dato.id ))).0.png}
+        \end{minipage}
+    \end{tabular}
+    
+\end{minipage}
 
 \newpage
 ((* endfor *))
+
